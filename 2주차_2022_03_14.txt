@@ -1,0 +1,17 @@
+'''
+2022_03_14
+2주차 수업
+'''
+'''
+print("A")
+print("B")
+'''
+'''
+#\은 new line을 의미
+print("A\nBC\nDEF")
+'''
+#=====문자열 슬라이싱(slice)=====
+#print("Hello"[0])
+#print("Hello"[1])
+print("Hello"[-1]) #뒤에서 첫글자
+print("Hello"[0:3]) #0<=범위 <3 까지 출력
