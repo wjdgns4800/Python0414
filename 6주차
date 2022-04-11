@@ -1,0 +1,34 @@
+n = int(input('aa'))
+a = 1
+b = 1
+c = 1
+
+while c<=n:
+    a=1
+    b=c
+    c+=1
+    while a<=n:
+        print(b, end=" ")
+        b+=n
+        a+=1
+
+    print()
+    '''
+#전체 : Hello ,
+#일부 : x가 가리키는 정보
+
+import time
+
+for X in "Hello":
+    # print(X)
+    # 타임모듈의 sleep()기능 실행
+    time.sleep(1)
+    print('단지 반복에 사용')
+    
+#문제
+'''
+'''
+자신의 영문 이름을 입력받아 아래와 같이 출력되도록 프로그램 해봅시다.
+입력 : HongGilDong    
+출력 : H-o-n-g-G-i-l-D-o-n-g
+'''
