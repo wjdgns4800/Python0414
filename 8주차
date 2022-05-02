@@ -1,0 +1,73 @@
+'''
+apple = 49
+man = 3
+
+while apple>=man:
+    apple=apple - man #apple is 46
+
+print(f'남은사과는 {apple}개 입니다.')
+
+apple = 49
+man = 3
+
+
+while apple>=man:
+    apple-=man
+    s=apple-man+1
+    
+print(f'{}')
+
+###
+finger = 0
+finger= +1 # ==> finger = 1
+손가락을 하나씩 증가한다
+finger+=1
+손가락을 하나씩 줄어든다
+finger-=1
+사과갯수가 사람수만큼씩 줄어든다
+a-=b
+사람수 만큼 사과갯수를 뺍니다
+사과갯수-=사람수
+꺼낸횟수+=1
+   
+'''
+#화면에 보드 상태 보여주기
+b=[ [1,2,5],
+    [3,0,6],
+    [8,7,4]]
+   
+print(b[0])
+print(b[1])
+print(b[2])
+
+r=1
+c=1
+
+
+
+    #만약 key값이 d와 같다면
+    #b[2][2]와 b[2][1]를 서로 바꾸기
+while True:                   
+    key=input('wasd중에 하나입력:')
+    if key=='a':
+       b[r][c-1],b[r][c] = b[r][c],b[r][c-1]
+       r=1
+       c-=1
+
+    elif key=='w':
+       b[r-1][c],b[r][c] = b[r][c],b[r-1][c]
+       r-=1
+       c=1
+
+    elif key=='d':
+       b[r][c],b[r][c+1] = b[r][c+1],b[r][c]
+       r=1
+       c+=1
+
+    elif key=='s':
+       b[r][c],b[r+1][c]=b[r+1][c],b[r][c]
+       r+=1
+       c=1           
+print(b[0])
+print(b[1])
+print(b[2])
