@@ -1,0 +1,23 @@
+import random #랜덤 추가
+st=0 #스트라이크 횟수
+c=0 #시도횟수 
+a=[]
+while len(a)<3 : #len 리스트 숫자를 센다 3 미만
+    r=str(random.randint(0,9)) # 무작위 0~9까지 출력
+    if not(r in a): #a의 안에 r이 없을때
+        a.append(r) #a안에 r을 포함
+while st<3: # 스트라이크 3 미만
+    st=0 #스트라이크 초기화
+    ba=0 # 볼 초기화
+    o=0 # 아웃 초기화
+    r=str(input("세개의 숫자 입력(ex:123):")) #세개의 숫자 입력
+    for i in range(0,3): #i에 3미만까지 반복
+        for x in range(0,3): #x에 3미만까지 반복
+            if r[i]==a[x] and i==x: #r의 i번째랑 a의 x번째가 같으며 i랑 x가 같을때
+                st+=1 #1씩증가
+            elif r[i]==a[x] and i!=x: #r의 i번째랑 a의 x번째가 같으며 i랑 x가 다를때
+                ba+=1 #1씩증가
+    o=3-(ba+st) #아웃 - (스트라이크+볼)
+    print(f"스트라이크:{st},볼:{ba},아웃{o}")
+    c+=1 #1씩증가
+print("정답입니다 시도 횟수 : ",c) 
